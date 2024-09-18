@@ -23,20 +23,12 @@ app:
   env:
     - name: JVM_ARGS # q: make that as a top level 'jvmArguments' property?
       value: "-DenvironmentType=stage"
-    - name: OTEL_EXPORTER_OTLP_ENDPOINT
-      value: "http://otel-collector.fmhwong-0712.svc.cluster.local:4317"
-    - name: OTEL_TRACES_EXPORTER
-      value: "none"
-    - name: OTEL_METRIC_EXPORT_INTERVAL
-      value: "1000"
-    - name: OTEL_SDK_DISABLED
-      value: "false"          
   # List of variables that can be referenced in server.xml
   # Liberty encrypted values are supported
   variables:
     - name: io_openliberty_sample_system_inMaintenance
       value: "false"
-  version: "b2a649b7-aa4e-45b1-8f84-908619845f56"
+  version: "2bf03b5b-e701-49d1-bc1d-4c167c79a94c"
 # probes
 # dynamic scaling
 # scaling to 0
